@@ -1,0 +1,125 @@
+/* Background Styling */
+.background-createpost {
+    background-image: url(../img/bg-signup1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.createpost {
+    width: 100%;
+    max-width: 700px;
+    /* More mobile-friendly */
+    margin: auto;
+    border: none;
+    /* Border not needed with subtle shadow */
+    border-radius: 5px;
+    background: #f8f8f8;
+    /* Slight background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Add some padding inside */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    /* Elements on opposite sides */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-header h4 {
+    font-size: 1.2rem;
+    /* Adjust font size */
+    font-weight: bold;
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+.main-div {
+    padding: 10px;
+    /* Provides spacing inside the container */
+}
+
+.main-div input {
+    margin: 0;
+    /* outline: none; */
+    /* border: none; */
+    padding: 10px;
+    /* transition: none; */
+}
+
+.main-div input:hover {
+    animation: none;
+}
+
+/* #post-btn {
+    border: none;
+    color: rgb(45, 138, 196);
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: bolder;
+    cursor: pointer;
+} */
+#post-btn {
+    border: none;
+    /* Remove any background color for a cleaner look */
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    content: "\f00c"; /* Font Awesome code for checkmark icon */
+    font-family: FontAwesome; /* Font family for Font Awesome icons */
+    /* Adjust font size if needed */
+    font-size: 18px;
+  }
+
+#post-btn:hover {
+    color: #2c3e50;
+    transform: translateY(-2px);
+    animation: zoomAndBounce 1s;
+}
+
+.details {
+    padding: 0 20px 20px;
+    /* Padding around the details section */
+}
+
+.card-header {
+    justify-content: left;
+}
+
+textarea {
+    width: calc(100% - 40px);
+    /* Full width minus padding */
+    margin: 10px 0;
+    /* Margin for spacing */
+    border: 1px solid #e2e2e2;
+    /* Subtle border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding inside the textarea */
+    resize: vertical;
+    /* Allows vertical resizing */
+    height: 100px;
+    /* Initial height */
+    outline: none;
+    /* Removes the outline to fit design */
+}
+
+.createpost:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover for depth */
+}
+
+#output{
+    width: 300px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}

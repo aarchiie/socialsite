@@ -1,0 +1,165 @@
+.LogIn {
+    background-image: url(../img/bg-signup1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.LogInForm {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: transparent; */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.LogInLogo {
+    width: 200px;
+    object-fit: contain;
+    padding: 10px 0px;
+}
+
+.form > div{
+    width: 100%;
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    font-size: 16px;
+    width: 92%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+input:hover {
+    animation: zoomAndBounce 1s;
+    border-color: rgb(47, 207, 251);
+}
+
+@keyframes zoomAndBounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1) translateY(-5px);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* input:focus {
+    border-color: rgb(47, 207, 251);
+} */
+
+#LogIn-btn {
+    background-color: rgb(45, 138, 196);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#LogIn-btn:hover {
+    background-color: #2c3e50;
+    transform: translateY(-3px);
+}
+
+.LogInForm2 {
+    padding: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .LogInForm {
+        padding: 20px;
+    }
+
+    .LogInLogo {
+        width: 120px;
+        padding: 10px 0;
+    }
+
+    input {
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    #LogIn-btn {
+        padding: 8px 12px;
+    }
+}
+
+
+/* .LogIn{
+    background-image: url(bg-signup1.jpg);
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogInForm{
+    background-color: transparent;
+    padding: 30px;
+    border: 2px solid rgb(47, 207, 251);
+    border-radius: 10px;
+}
+
+.LogInLogo{
+    width: 200px;
+    object-fit: contain;
+    padding: 10px 0px;
+}
+
+
+input{
+    padding: 7px;
+    margin: 3px 0px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.LogInForm > div{
+    width: 100%;
+    margin: auto;
+}
+
+#LogIn-btn{
+    background-color: rgb(45, 138, 196);
+    border-radius: 3px;
+    border : none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 8px;
+    
+}
+
+#LogIn-btn:hover {
+    background-color: blue;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.LogInForm2{
+    padding: 20px;;
+} */

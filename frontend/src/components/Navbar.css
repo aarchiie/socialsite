@@ -1,0 +1,83 @@
+img{
+    width : 15%;
+    object-fit: contain; /*to maintain aspect ratio*/
+}
+
+.navbar{
+    display:  flex;
+    justify-content: space-evenly;
+   background-image: url(../img/bg-signup.jpg);
+   background-size: cover;
+   
+}
+
+.nav-mobile{
+    display: none;
+}
+
+ul{
+    display: flex; /*flex is use for horizontal allign*/
+    align-items: baseline;
+}
+
+li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+/* a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 15px 15px;
+} */
+
+/* Style for the button */
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(45, 138, 196);
+    padding: 0; /* Set padding to 0 */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px; /* Set font size */
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #2c3e50;
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width:800px)
+{
+    #hw-logo{
+        display: none;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-image: none;
+        background-color: #fff;
+        box-shadow: 0px -2px 5px #fff;
+    }
+
+    .navbar ul{
+        margin: 0;
+        padding: 10px 0px;
+    }
+}

@@ -29,16 +29,29 @@ mongoose.connection.on("error" , ()=>{
 })
 
 //serveing the frontend
-app.use(express.static(path.join(__dirname , "./frontend/build")))
+// app.use(express.static(path.join(__dirname , "./frontend/build")))
 
-app.get("*", (req,res)=>{
-    res.sendFile(
-        path.join(__dirname , "./frontend/build/index.html"),
-        function(err){
-            res.status(500).send(err)
+// app.get("*", (req,res)=>{
+//     res.sendFile(
+//         path.join(__dirname , "./frontend/build/index.html"),
+//         function(err){
+//             res.status(500).send(err)
+//         }
+//     )
+// })
+// Serving the frontend
+const frontendPath = path.join(__dirname, "./frontend/build");
+app.use(express.static(frontendPath));
+
+// Catch-all route to serve index.html
+app.get("*", (req, res) => {
+    res.sendFile(path.join(frontendPath, "index.html"), err => {
+        if (err) {
+            console.error("Error serving index.html:", err);
+            res.status(500).send(err);
         }
-    )
-})
+    });
+});
 
 app.listen(port , ()=>{
     console.log("server is running on port " + port);
